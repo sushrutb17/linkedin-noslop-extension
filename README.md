@@ -55,3 +55,7 @@ See [`extension/README.md`](extension/README.md) for details and known gaps.
 - [TypeSafe introduction](https://docs.typesafe.ai/introduction) · [quick start](https://docs.typesafe.ai/introduction/quickstart) · [confidence](https://docs.typesafe.ai/confidence) · [Jev 1.13 limitations](https://docs.typesafe.ai/model-jaggedness/jev-1.13.md) · [guardrails cookbook](https://docs.typesafe.ai/cookbooks/llm_guardrails.md)
 - [Chrome extension content scripts](https://developer.chrome.com/docs/extensions/develop/concepts/content-scripts)
 - [petergyang/no-ai-slop](https://github.com/petergyang/no-ai-slop) and [sergebulaev/linkedin-skills](https://github.com/sergebulaev/linkedin-skills) — named writing-pattern catalogs that inspired several rubric questions
+
+## License
+
+[MIT](LICENSE). The license covers this code only; using TypeSafe/Jev is subject to TypeSafe's own terms, and running the extension on LinkedIn is subject to LinkedIn's.
