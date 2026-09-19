@@ -1,0 +1,18 @@
+{
+  "name": "typesafe-jev-eval-harness",
+  "private": true,
+  "type": "module",
+  "version": "0.1.0",
+  "description": "Evaluation harness for docs/EVALUATION.md — not the extension or backend, just the offline rubric-vs-labels check.",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "eval": "node run.mjs",
+    "eval:dry-run": "node run.mjs --dry-run",
+    "test": "node --test experimental.test.mjs"
+  },
+  "dependencies": {
+    "@typesafe-ai/sdk": "^0.6.0"
+  }
+}

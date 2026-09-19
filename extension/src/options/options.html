@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>LinkedIn NoSlop Settings</title>
+  <style>
+    body { max-width: 420px; margin: 24px auto; font: 14px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: #222; }
+    label { display: flex; align-items: center; gap: 8px; margin-bottom: 16px; }
+    .field { margin-bottom: 20px; }
+    .field h3 { margin: 0 0 4px; font-size: 14px; }
+    .field p { margin: 0; color: #666; font-size: 12px; }
+    input[type="range"] { width: 100%; }
+    input[type="password"] { width: 100%; box-sizing: border-box; padding: 6px 8px; font-size: 13px; }
+    .note { background: #fff8e1; border: 1px solid #f0d98c; border-radius: 6px; padding: 8px 12px; font-size: 12px; color: #6b5900; }
+    .status { font-size: 12px; margin-top: 6px; min-height: 14px; }
+    .status.ok { color: #1a7f37; }
+    .status.err { color: #b42318; }
+    button { padding: 5px 14px; border-radius: 6px; border: 1px solid #999; background: white; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <h2>LinkedIn NoSlop — settings</h2>
+  <div class="note">
+    Personal prototype — not distributed. Your API key is stored only in this browser's local extension storage and sent only to api.typesafe.ai; it never leaves your machine otherwise.
+  </div>
+
+  <div class="field">
+    <label>
+      <input type="checkbox" id="enabled-toggle" />
+      Enable filtering
+    </label>
+  </div>
+
+  <div class="field">
+    <h3>TypeSafe API key</h3>
+    <p>Get one from your TypeSafe account. Required for real filtering — without it, posts stay visible (fail-safe).</p>
+    <input type="password" id="api-key" placeholder="tsk_..." autocomplete="off" />
+    <button type="button" id="save-key">Save</button>
+    <div class="status" id="key-status"></div>
+  </div>
+
+  <div class="field">
+    <h3>Sensitivity</h3>
+    <p>Not yet connected — decision thresholds are fixed in code for now (see src/shared/decide.js).</p>
+    <input type="range" id="sensitivity" min="0" max="100" step="10" disabled />
+  </div>
+
+  <script src="options.js"></script>
+</body>
+</html>

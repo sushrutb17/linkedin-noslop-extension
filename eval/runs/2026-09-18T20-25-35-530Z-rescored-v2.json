@@ -1,0 +1,3135 @@
+{
+  "runId": "2026-09-18T20-25-35-530Z-rescored-v2",
+  "rubricVersion": "v1",
+  "decisionRulesVersion": "v2",
+  "model": "jev-1.13.0",
+  "results": [
+    {
+      "id": "EX-001",
+      "split": "dev",
+      "userLabel": "filter",
+      "decision": "uncertain",
+      "reasonCodes": [
+        "engagement_bait"
+      ],
+      "modelUsed": "jev-1.13.0",
+      "usage": {
+        "input_tokens": 1219,
+        "output_tokens": 198
+      },
+      "latencyMs": 428,
+      "answers": {
+        "engagement_bait": {
+          "type": "noul",
+          "noul": 0.66
+        },
+        "generic_filler": {
+          "type": "score",
+          "score": 1.38,
+          "confidence": 0.27,
+          "legend": {
+            "0": "Every claim is specific to this post's actual subject",
+            "1": "A mix of specific content and generic filler phrases or sentiment",
+            "2": "Mostly or entirely generic sentiment that could apply to nearly anything"
+          },
+          "probabilities": {
+            "0": 0.05,
+            "1": 0.52,
+            "2": 0.43
+          }
+        },
+        "concrete_substance": {
+          "type": "score",
+          "score": 0.38,
+          "confidence": 0.43,
+          "legend": {
+            "0": "No specific detail; purely abstract or vague",
+            "1": "Some specific detail mixed with generic statements",
+            "2": "Substantially concrete: numbers, mechanisms, or specific steps are central to the post"
+          },
+          "probabilities": {
+            "0": 0.62,
+            "1": 0.37,
+            "2": 0.01
+          }
+        },
+        "formulaic_storytelling": {
+          "type": "noul",
+          "noul": 0.11
+        },
+        "adversarial_instruction": {
+          "type": "noul",
+          "noul": 0.01
+        },
+        "adversarial_severity": {
+          "type": "score",
+          "score": 0.01,
+          "confidence": 0.99,
+          "legend": {
+            "0": "No such language present",
+            "1": "Mentions AI or classifiers incidentally, not as an instruction",
+            "2": "Contains a clear instruction or claim aimed at influencing classification",
+            "3": "Explicit override or system-impersonation language attempting to force a specific verdict"
+          },
+          "probabilities": {
+            "0": 1,
+            "1": 0,
+            "2": 0,
+            "3": 0
+          }
+        },
+        "formulaic_rhetorical_hook": {
+          "type": "noul",
+          "noul": 0.08
+        },
+        "fake_profound_framing": {
+          "type": "noul",
+          "noul": 0.4
+        },
+        "vague_sourcing": {
+          "type": "noul",
+          "noul": 0.02
+        },
+        "corporate_phrasing_density": {
+          "type": "score",
+          "score": 0.46,
+          "confidence": 0.3,
+          "legend": {
+            "0": "None of this kind of language",
+            "1": "Some of this kind of language, mixed with concrete content",
+            "2": "Heavily dominated by this kind of language"
+          },
+          "probabilities": {
+            "0": 0.54,
+            "1": 0.45,
+            "2": 0.01
+          }
+        }
+      },
+      "error": null
+    },
+    {
+      "id": "EX-002",
+      "split": "dev",
+      "userLabel": "filter",
+      "decision": "uncertain",
+      "reasonCodes": [
+        "engagement_bait"
+      ],
+      "modelUsed": "jev-1.13.0",
+      "usage": {
+        "input_tokens": 1221,
+        "output_tokens": 198
+      },
+      "latencyMs": 509,
+      "answers": {
+        "engagement_bait": {
+          "type": "noul",
+          "noul": 0.98
+        },
+        "generic_filler": {
+          "type": "score",
+          "score": 1.21,
+          "confidence": 0,
+          "legend": {
+            "0": "Every claim is specific to this post's actual subject",
+            "1": "A mix of specific content and generic filler phrases or sentiment",
+            "2": "Mostly or entirely generic sentiment that could apply to nearly anything"
+          },
+          "probabilities": {
+            "0": 0.3,
+            "1": 0.19,
+            "2": 0.51
+          }
+        },
+        "concrete_substance": {
+          "type": "score",
+          "score": 0.68,
+          "confidence": 0.44,
+          "legend": {
+            "0": "No specific detail; purely abstract or vague",
+            "1": "Some specific detail mixed with generic statements",
+            "2": "Substantially concrete: numbers, mechanisms, or specific steps are central to the post"
+          },
+          "probabilities": {
+            "0": 0.35,
+            "1": 0.62,
+            "2": 0.03
+          }
+        },
+        "formulaic_storytelling": {
+          "type": "noul",
+          "noul": 0.06
+        },
+        "adversarial_instruction": {
+          "type": "noul",
+          "noul": 0.02
+        },
+        "adversarial_severity": {
+          "type": "score",
+          "score": 0.04,
+          "confidence": 0.96,
+          "legend": {
+            "0": "No such language present",
+            "1": "Mentions AI or classifiers incidentally, not as an instruction",
+            "2": "Contains a clear instruction or claim aimed at influencing classification",
+            "3": "Explicit override or system-impersonation language attempting to force a specific verdict"
+          },
+          "probabilities": {
+            "0": 0.98,
+            "1": 0,
+            "2": 0.02,
+            "3": 0
+          }
+        },
+        "formulaic_rhetorical_hook": {
+          "type": "noul",
+          "noul": 0.06
+        },
+        "fake_profound_framing": {
+          "type": "noul",
+          "noul": 0.06
+        },
+        "vague_sourcing": {
+          "type": "noul",
+          "noul": 0.39
+        },
+        "corporate_phrasing_density": {
+          "type": "score",
+          "score": 0.47,
+          "confidence": 0.29,
+          "legend": {
+            "0": "None of this kind of language",
+            "1": "Some of this kind of language, mixed with concrete content",
+            "2": "Heavily dominated by this kind of language"
+          },
+          "probabilities": {
+            "0": 0.58,
+            "1": 0.37,
+            "2": 0.05
+          }
+        }
+      },
+      "error": null
+    },
+    {
+      "id": "EX-003",
+      "split": "held_out",
+      "userLabel": "filter",
+      "decision": "filter",
+      "reasonCodes": [
+        "formulaic_rhetorical_hook",
+        "generic_filler"
+      ],
+      "modelUsed": "jev-1.13.0",
+      "usage": {
+        "input_tokens": 1214,
+        "output_tokens": 198
+      },
+      "latencyMs": 293,
+      "answers": {
+        "engagement_bait": {
+          "type": "noul",
+          "noul": 0.35
+        },
+        "generic_filler": {
+          "type": "score",
+          "score": 1.73,
+          "confidence": 0.6,
+          "legend": {
+            "0": "Every claim is specific to this post's actual subject",
+            "1": "A mix of specific content and generic filler phrases or sentiment",
+            "2": "Mostly or entirely generic sentiment that could apply to nearly anything"
+          },
+          "probabilities": {
+            "0": 0.1,
+            "1": 0.06,
+            "2": 0.84
+          }
+        },
+        "concrete_substance": {
+          "type": "score",
+          "score": 0.15,
+          "confidence": 0.78,
+          "legend": {
+            "0": "No specific detail; purely abstract or vague",
+            "1": "Some specific detail mixed with generic statements",
+            "2": "Substantially concrete: numbers, mechanisms, or specific steps are central to the post"
+          },
+          "probabilities": {
+            "0": 0.86,
+            "1": 0.13,
+            "2": 0.01
+          }
+        },
+        "formulaic_storytelling": {
+          "type": "noul",
+          "noul": 0.02
+        },
+        "adversarial_instruction": {
+          "type": "noul",
+          "noul": 0.02
+        },
+        "adversarial_severity": {
+          "type": "score",
+          "score": 0.01,
+          "confidence": 0.99,
+          "legend": {
+            "0": "No such language present",
+            "1": "Mentions AI or classifiers incidentally, not as an instruction",
+            "2": "Contains a clear instruction or claim aimed at influencing classification",
+            "3": "Explicit override or system-impersonation language attempting to force a specific verdict"
+          },
+          "probabilities": {
+            "0": 0.99,
+            "1": 0,
+            "2": 0.01,
+            "3": 0
+          }
+        },
+        "formulaic_rhetorical_hook": {
+          "type": "noul",
+          "noul": 0.52
+        },
+        "fake_profound_framing": {
+          "type": "noul",
+          "noul": 0.06
+        },
+        "vague_sourcing": {
+          "type": "noul",
+          "noul": 0.04
+        },
+        "corporate_phrasing_density": {
+          "type": "score",
+          "score": 0.9,
+          "confidence": 0,
+          "legend": {
+            "0": "None of this kind of language",
+            "1": "Some of this kind of language, mixed with concrete content",
+            "2": "Heavily dominated by this kind of language"
+          },
+          "probabilities": {
+            "0": 0.48,
+            "1": 0.15,
+            "2": 0.37
+          }
+        }
+      },
+      "error": null
+    },
+    {
+      "id": "EX-004",
+      "split": "dev",
+      "userLabel": "filter",
+      "decision": "filter",
+      "reasonCodes": [
+        "vague_sourcing",
+        "generic_filler"
+      ],
+      "modelUsed": "jev-1.13.0",
+      "usage": {
+        "input_tokens": 1233,
+        "output_tokens": 198
+      },
+      "latencyMs": 369,
+      "answers": {
+        "engagement_bait": {
+          "type": "noul",
+          "noul": 0.07
+        },
+        "generic_filler": {
+          "type": "score",
+          "score": 1.89,
+          "confidence": 0.83,
+          "legend": {
+            "0": "Every claim is specific to this post's actual subject",
+            "1": "A mix of specific content and generic filler phrases or sentiment",
+            "2": "Mostly or entirely generic sentiment that could apply to nearly anything"
+          },
+          "probabilities": {
+            "0": 0.02,
+            "1": 0.07,
+            "2": 0.91
+          }
+        },
+        "concrete_substance": {
+          "type": "score",
+          "score": 0.27,
+          "confidence": 0.59,
+          "legend": {
+            "0": "No specific detail; purely abstract or vague",
+            "1": "Some specific detail mixed with generic statements",
+            "2": "Substantially concrete: numbers, mechanisms, or specific steps are central to the post"
+          },
+          "probabilities": {
+            "0": 0.73,
+            "1": 0.27,
+            "2": 0
+          }
+        },
+        "formulaic_storytelling": {
+          "type": "noul",
+          "noul": 0.03
+        },
+        "adversarial_instruction": {
+          "type": "noul",
+          "noul": 0.02
+        },
+        "adversarial_severity": {
+          "type": "score",
+          "score": 0.01,
+          "confidence": 0.99,
+          "legend": {
+            "0": "No such language present",
+            "1": "Mentions AI or classifiers incidentally, not as an instruction",
+            "2": "Contains a clear instruction or claim aimed at influencing classification",
+            "3": "Explicit override or system-impersonation language attempting to force a specific verdict"
+          },
+          "probabilities": {
+            "0": 0.99,
+            "1": 0,
+            "2": 0.01,
+            "3": 0
+          }
+        },
+        "formulaic_rhetorical_hook": {
+          "type": "noul",
+          "noul": 0.29
+        },
+        "fake_profound_framing": {
+          "type": "noul",
+          "noul": 0.35
+        },
+        "vague_sourcing": {
+          "type": "noul",
+          "noul": 0.98
+        },
+        "corporate_phrasing_density": {
+          "type": "score",
+          "score": 1.02,
+          "confidence": 0.11,
+          "legend": {
+            "0": "None of this kind of language",
+            "1": "Some of this kind of language, mixed with concrete content",
+            "2": "Heavily dominated by this kind of language"
+          },
+          "probabilities": {
+            "0": 0.28,
+            "1": 0.41,
+            "2": 0.31
+          }
+        }
+      },
+      "error": null
+    },
+    {
+      "id": "EX-005",
+      "split": "dev",
+      "userLabel": "filter",
+      "decision": "uncertain",
+      "reasonCodes": [
+        "engagement_bait",
+        "generic_filler"
+      ],
+      "modelUsed": "jev-1.13.0",
+      "usage": {
+        "input_tokens": 1216,
+        "output_tokens": 198
+      },
+      "latencyMs": 295,
+      "answers": {
+        "engagement_bait": {
+          "type": "noul",
+          "noul": 0.96
+        },
+        "generic_filler": {
+          "type": "score",
+          "score": 1.82,
+          "confidence": 0.72,
+          "legend": {
+            "0": "Every claim is specific to this post's actual subject",
+            "1": "A mix of specific content and generic filler phrases or sentiment",
+            "2": "Mostly or entirely generic sentiment that could apply to nearly anything"
+          },
+          "probabilities": {
+            "0": 0.09,
+            "1": 0.01,
+            "2": 0.9
+          }
+        },
+        "concrete_substance": {
+          "type": "score",
+          "score": 1.21,
+          "confidence": 0,
+          "legend": {
+            "0": "No specific detail; purely abstract or vague",
+            "1": "Some specific detail mixed with generic statements",
+            "2": "Substantially concrete: numbers, mechanisms, or specific steps are central to the post"
+          },
+          "probabilities": {
+            "0": 0.21,
+            "1": 0.37,
+            "2": 0.42
+          }
+        },
+        "formulaic_storytelling": {
+          "type": "noul",
+          "noul": 0.03
+        },
+        "adversarial_instruction": {
+          "type": "noul",
+          "noul": 0.11
+        },
+        "adversarial_severity": {
+          "type": "score",
+          "score": 1.28,
+          "confidence": 0.27,
+          "legend": {
+            "0": "No such language present",
+            "1": "Mentions AI or classifiers incidentally, not as an instruction",
+            "2": "Contains a clear instruction or claim aimed at influencing classification",
+            "3": "Explicit override or system-impersonation language attempting to force a specific verdict"
+          },
+          "probabilities": {
+            "0": 0.35,
+            "1": 0.02,
+            "2": 0.62,
+            "3": 0.01
+          }
+        },
+        "formulaic_rhetorical_hook": {
+          "type": "noul",
+          "noul": 0.07
+        },
+        "fake_profound_framing": {
+          "type": "noul",
+          "noul": 0.08
+        },
+        "vague_sourcing": {
+          "type": "noul",
+          "noul": 0.08
+        },
+        "corporate_phrasing_density": {
+          "type": "score",
+          "score": 0.13,
+          "confidence": 0.8,
+          "legend": {
+            "0": "None of this kind of language",
+            "1": "Some of this kind of language, mixed with concrete content",
+            "2": "Heavily dominated by this kind of language"
+          },
+          "probabilities": {
+            "0": 0.91,
+            "1": 0.06,
+            "2": 0.03
+          }
+        }
+      },
+      "error": null
+    },
+    {
+      "id": "EX-006",
+      "split": "held_out",
+      "userLabel": "filter",
+      "decision": "filter",
+      "reasonCodes": [
+        "formulaic_rhetorical_hook",
+        "fake_profound_framing",
+        "generic_filler"
+      ],
+      "modelUsed": "jev-1.13.0",
+      "usage": {
+        "input_tokens": 1218,
+        "output_tokens": 198
+      },
+      "latencyMs": 209,
+      "answers": {
+        "engagement_bait": {
+          "type": "noul",
+          "noul": 0.02
+        },
+        "generic_filler": {
+          "type": "score",
+          "score": 1.98,
+          "confidence": 0.97,
+          "legend": {
+            "0": "Every claim is specific to this post's actual subject",
+            "1": "A mix of specific content and generic filler phrases or sentiment",
+            "2": "Mostly or entirely generic sentiment that could apply to nearly anything"
+          },
+          "probabilities": {
+            "0": 0,
+            "1": 0.01,
+            "2": 0.99
+          }
+        },
+        "concrete_substance": {
+          "type": "score",
+          "score": 0,
+          "confidence": 1,
+          "legend": {
+            "0": "No specific detail; purely abstract or vague",
+            "1": "Some specific detail mixed with generic statements",
+            "2": "Substantially concrete: numbers, mechanisms, or specific steps are central to the post"
+          },
+          "probabilities": {
+            "0": 1,
+            "1": 0,
+            "2": 0
+          }
+        },
+        "formulaic_storytelling": {
+          "type": "noul",
+          "noul": 0.04
+        },
+        "adversarial_instruction": {
+          "type": "noul",
+          "noul": 0.01
+        },
+        "adversarial_severity": {
+          "type": "score",
+          "score": 0,
+          "confidence": 1,
+          "legend": {
+            "0": "No such language present",
+            "1": "Mentions AI or classifiers incidentally, not as an instruction",
+            "2": "Contains a clear instruction or claim aimed at influencing classification",
+            "3": "Explicit override or system-impersonation language attempting to force a specific verdict"
+          },
+          "probabilities": {
+            "0": 1,
+            "1": 0,
+            "2": 0,
+            "3": 0
+          }
+        },
+        "formulaic_rhetorical_hook": {
+          "type": "noul",
+          "noul": 0.96
+        },
+        "fake_profound_framing": {
+          "type": "noul",
+          "noul": 0.94
+        },
+        "vague_sourcing": {
+          "type": "noul",
+          "noul": 0.22
+        },
+        "corporate_phrasing_density": {
+          "type": "score",
+          "score": 1.47,
+          "confidence": 0.2,
+          "legend": {
+            "0": "None of this kind of language",
+            "1": "Some of this kind of language, mixed with concrete content",
+            "2": "Heavily dominated by this kind of language"
+          },
+          "probabilities": {
+            "0": 0.2,
+            "1": 0.12,
+            "2": 0.68
+          }
+        }
+      },
+      "error": null
+    },
+    {
+      "id": "EX-007",
+      "split": "dev",
+      "userLabel": "filter",
+      "decision": "filter",
+      "reasonCodes": [
+        "fake_profound_framing",
+        "generic_filler",
+        "corporate_phrasing"
+      ],
+      "modelUsed": "jev-1.13.0",
+      "usage": {
+        "input_tokens": 1207,
+        "output_tokens": 198
+      },
+      "latencyMs": 244,
+      "answers": {
+        "engagement_bait": {
+          "type": "noul",
+          "noul": 0.02
+        },
+        "generic_filler": {
+          "type": "score",
+          "score": 2,
+          "confidence": 1,
+          "legend": {
+            "0": "Every claim is specific to this post's actual subject",
+            "1": "A mix of specific content and generic filler phrases or sentiment",
+            "2": "Mostly or entirely generic sentiment that could apply to nearly anything"
+          },
+          "probabilities": {
+            "0": 0,
+            "1": 0,
+            "2": 1
+          }
+        },
+        "concrete_substance": {
+          "type": "score",
+          "score": 0,
+          "confidence": 1,
+          "legend": {
+            "0": "No specific detail; purely abstract or vague",
+            "1": "Some specific detail mixed with generic statements",
+            "2": "Substantially concrete: numbers, mechanisms, or specific steps are central to the post"
+          },
+          "probabilities": {
+            "0": 1,
+            "1": 0,
+            "2": 0
+          }
+        },
+        "formulaic_storytelling": {
+          "type": "noul",
+          "noul": 0.02
+        },
+        "adversarial_instruction": {
+          "type": "noul",
+          "noul": 0.01
+        },
+        "adversarial_severity": {
+          "type": "score",
+          "score": 0,
+          "confidence": 1,
+          "legend": {
+            "0": "No such language present",
+            "1": "Mentions AI or classifiers incidentally, not as an instruction",
+            "2": "Contains a clear instruction or claim aimed at influencing classification",
+            "3": "Explicit override or system-impersonation language attempting to force a specific verdict"
+          },
+          "probabilities": {
+            "0": 1,
+            "1": 0,
+            "2": 0,
+            "3": 0
+          }
+        },
+        "formulaic_rhetorical_hook": {
+          "type": "noul",
+          "noul": 0.03
+        },
+        "fake_profound_framing": {
+          "type": "noul",
+          "noul": 0.86
+        },
+        "vague_sourcing": {
+          "type": "noul",
+          "noul": 0.04
+        },
+        "corporate_phrasing_density": {
+          "type": "score",
+          "score": 2,
+          "confidence": 1,
+          "legend": {
+            "0": "None of this kind of language",
+            "1": "Some of this kind of language, mixed with concrete content",
+            "2": "Heavily dominated by this kind of language"
+          },
+          "probabilities": {
+            "0": 0,
+            "1": 0,
+            "2": 1
+          }
+        }
+      },
+      "error": null
+    },
+    {
+      "id": "EX-008",
+      "split": "dev",
+      "userLabel": "filter",
+      "decision": "filter",
+      "reasonCodes": [
+        "fake_profound_framing",
+        "vague_sourcing",
+        "generic_filler",
+        "corporate_phrasing"
+      ],
+      "modelUsed": "jev-1.13.0",
+      "usage": {
+        "input_tokens": 1205,
+        "output_tokens": 198
+      },
+      "latencyMs": 139,
+      "answers": {
+        "engagement_bait": {
+          "type": "noul",
+          "noul": 0.03
+        },
+        "generic_filler": {
+          "type": "score",
+          "score": 1.97,
+          "confidence": 0.95,
+          "legend": {
+            "0": "Every claim is specific to this post's actual subject",
+            "1": "A mix of specific content and generic filler phrases or sentiment",
+            "2": "Mostly or entirely generic sentiment that could apply to nearly anything"
+          },
+          "probabilities": {
+            "0": 0.01,
+            "1": 0.02,
+            "2": 0.97
+          }
+        },
+        "concrete_substance": {
+          "type": "score",
+          "score": 0,
+          "confidence": 1,
+          "legend": {
+            "0": "No specific detail; purely abstract or vague",
+            "1": "Some specific detail mixed with generic statements",
+            "2": "Substantially concrete: numbers, mechanisms, or specific steps are central to the post"
+          },
+          "probabilities": {
+            "0": 1,
+            "1": 0,
+            "2": 0
+          }
+        },
+        "formulaic_storytelling": {
+          "type": "noul",
+          "noul": 0.04
+        },
+        "adversarial_instruction": {
+          "type": "noul",
+          "noul": 0.02
+        },
+        "adversarial_severity": {
+          "type": "score",
+          "score": 0,
+          "confidence": 1,
+          "legend": {
+            "0": "No such language present",
+            "1": "Mentions AI or classifiers incidentally, not as an instruction",
+            "2": "Contains a clear instruction or claim aimed at influencing classification",
+            "3": "Explicit override or system-impersonation language attempting to force a specific verdict"
+          },
+          "probabilities": {
+            "0": 1,
+            "1": 0,
+            "2": 0,
+            "3": 0
+          }
+        },
+        "formulaic_rhetorical_hook": {
+          "type": "noul",
+          "noul": 0.05
+        },
+        "fake_profound_framing": {
+          "type": "noul",
+          "noul": 0.98
+        },
+        "vague_sourcing": {
+          "type": "noul",
+          "noul": 0.98
+        },
+        "corporate_phrasing_density": {
+          "type": "score",
+          "score": 1.93,
+          "confidence": 0.89,
+          "legend": {
+            "0": "None of this kind of language",
+            "1": "Some of this kind of language, mixed with concrete content",
+            "2": "Heavily dominated by this kind of language"
+          },
+          "probabilities": {
+            "0": 0.02,
+            "1": 0.02,
+            "2": 0.96
+          }
+        }
+      },
+      "error": null
+    },
+    {
+      "id": "EX-009",
+      "split": "held_out",
+      "userLabel": "filter",
+      "decision": "filter",
+      "reasonCodes": [
+        "formulaic_rhetorical_hook",
+        "fake_profound_framing",
+        "generic_filler"
+      ],
+      "modelUsed": "jev-1.13.0",
+      "usage": {
+        "input_tokens": 1204,
+        "output_tokens": 198
+      },
+      "latencyMs": 162,
+      "answers": {
+        "engagement_bait": {
+          "type": "noul",
+          "noul": 0.02
+        },
+        "generic_filler": {
+          "type": "score",
+          "score": 2,
+          "confidence": 1,
+          "legend": {
+            "0": "Every claim is specific to this post's actual subject",
+            "1": "A mix of specific content and generic filler phrases or sentiment",
+            "2": "Mostly or entirely generic sentiment that could apply to nearly anything"
+          },
+          "probabilities": {
+            "0": 0,
+            "1": 0,
+            "2": 1
+          }
+        },
+        "concrete_substance": {
+          "type": "score",
+          "score": 0,
+          "confidence": 1,
+          "legend": {
+            "0": "No specific detail; purely abstract or vague",
+            "1": "Some specific detail mixed with generic statements",
+            "2": "Substantially concrete: numbers, mechanisms, or specific steps are central to the post"
+          },
+          "probabilities": {
+            "0": 1,
+            "1": 0,
+            "2": 0
+          }
+        },
+        "formulaic_storytelling": {
+          "type": "noul",
+          "noul": 0.03
+        },
+        "adversarial_instruction": {
+          "type": "noul",
+          "noul": 0.01
+        },
+        "adversarial_severity": {
+          "type": "score",
+          "score": 0,
+          "confidence": 1,
+          "legend": {
+            "0": "No such language present",
+            "1": "Mentions AI or classifiers incidentally, not as an instruction",
+            "2": "Contains a clear instruction or claim aimed at influencing classification",
+            "3": "Explicit override or system-impersonation language attempting to force a specific verdict"
+          },
+          "probabilities": {
+            "0": 1,
+            "1": 0,
+            "2": 0,
+            "3": 0
+          }
+        },
+        "formulaic_rhetorical_hook": {
+          "type": "noul",
+          "noul": 0.53
+        },
+        "fake_profound_framing": {
+          "type": "noul",
+          "noul": 0.9
+        },
+        "vague_sourcing": {
+          "type": "noul",
+          "noul": 0.22
+        },
+        "corporate_phrasing_density": {
+          "type": "score",
+          "score": 1,
+          "confidence": 0,
+          "legend": {
+            "0": "None of this kind of language",
+            "1": "Some of this kind of language, mixed with concrete content",
+            "2": "Heavily dominated by this kind of language"
+          },
+          "probabilities": {
+            "0": 0.45,
+            "1": 0.1,
+            "2": 0.45
+          }
+        }
+      },
+      "error": null
+    },
+    {
+      "id": "EX-010",
+      "split": "dev",
+      "userLabel": "filter",
+      "decision": "filter",
+      "reasonCodes": [
+        "formulaic_storytelling",
+        "formulaic_rhetorical_hook",
+        "fake_profound_framing",
+        "vague_sourcing",
+        "generic_filler"
+      ],
+      "modelUsed": "jev-1.13.0",
+      "usage": {
+        "input_tokens": 1222,
+        "output_tokens": 198
+      },
+      "latencyMs": 196,
+      "answers": {
+        "engagement_bait": {
+          "type": "noul",
+          "noul": 0.49
+        },
+        "generic_filler": {
+          "type": "score",
+          "score": 1.91,
+          "confidence": 0.87,
+          "legend": {
+            "0": "Every claim is specific to this post's actual subject",
+            "1": "A mix of specific content and generic filler phrases or sentiment",
+            "2": "Mostly or entirely generic sentiment that could apply to nearly anything"
+          },
+          "probabilities": {
+            "0": 0,
+            "1": 0.09,
+            "2": 0.91
+          }
+        },
+        "concrete_substance": {
+          "type": "score",
+          "score": 0.04,
+          "confidence": 0.94,
+          "legend": {
+            "0": "No specific detail; purely abstract or vague",
+            "1": "Some specific detail mixed with generic statements",
+            "2": "Substantially concrete: numbers, mechanisms, or specific steps are central to the post"
+          },
+          "probabilities": {
+            "0": 0.96,
+            "1": 0.04,
+            "2": 0
+          }
+        },
+        "formulaic_storytelling": {
+          "type": "noul",
+          "noul": 0.96
+        },
+        "adversarial_instruction": {
+          "type": "noul",
+          "noul": 0.02
+        },
+        "adversarial_severity": {
+          "type": "score",
+          "score": 0.1,
+          "confidence": 0.9,
+          "legend": {
+            "0": "No such language present",
+            "1": "Mentions AI or classifiers incidentally, not as an instruction",
+            "2": "Contains a clear instruction or claim aimed at influencing classification",
+            "3": "Explicit override or system-impersonation language attempting to force a specific verdict"
+          },
+          "probabilities": {
+            "0": 0.95,
+            "1": 0,
+            "2": 0.05,
+            "3": 0
+          }
+        },
+        "formulaic_rhetorical_hook": {
+          "type": "noul",
+          "noul": 0.83
+        },
+        "fake_profound_framing": {
+          "type": "noul",
+          "noul": 0.91
+        },
+        "vague_sourcing": {
+          "type": "noul",
+          "noul": 0.64
+        },
+        "corporate_phrasing_density": {
+          "type": "score",
+          "score": 1.35,
+          "confidence": 0.02,
+          "legend": {
+            "0": "None of this kind of language",
+            "1": "Some of this kind of language, mixed with concrete content",
+            "2": "Heavily dominated by this kind of language"
+          },
+          "probabilities": {
+            "0": 0.11,
+            "1": 0.43,
+            "2": 0.46
+          }
+        }
+      },
+      "error": null
+    },
+    {
+      "id": "EX-011",
+      "split": "dev",
+      "userLabel": "keep",
+      "decision": "keep",
+      "reasonCodes": [
+        "concrete_substance_high"
+      ],
+      "modelUsed": "jev-1.13.0",
+      "usage": {
+        "input_tokens": 1245,
+        "output_tokens": 198
+      },
+      "latencyMs": 198,
+      "answers": {
+        "engagement_bait": {
+          "type": "noul",
+          "noul": 0.02
+        },
+        "generic_filler": {
+          "type": "score",
+          "score": 0.2,
+          "confidence": 0.69,
+          "legend": {
+            "0": "Every claim is specific to this post's actual subject",
+            "1": "A mix of specific content and generic filler phrases or sentiment",
+            "2": "Mostly or entirely generic sentiment that could apply to nearly anything"
+          },
+          "probabilities": {
+            "0": 0.8,
+            "1": 0.2,
+            "2": 0
+          }
+        },
+        "concrete_substance": {
+          "type": "score",
+          "score": 2,
+          "confidence": 1,
+          "legend": {
+            "0": "No specific detail; purely abstract or vague",
+            "1": "Some specific detail mixed with generic statements",
+            "2": "Substantially concrete: numbers, mechanisms, or specific steps are central to the post"
+          },
+          "probabilities": {
+            "0": 0,
+            "1": 0,
+            "2": 1
+          }
+        },
+        "formulaic_storytelling": {
+          "type": "noul",
+          "noul": 0.03
+        },
+        "adversarial_instruction": {
+          "type": "noul",
+          "noul": 0.01
+        },
+        "adversarial_severity": {
+          "type": "score",
+          "score": 0,
+          "confidence": 1,
+          "legend": {
+            "0": "No such language present",
+            "1": "Mentions AI or classifiers incidentally, not as an instruction",
+            "2": "Contains a clear instruction or claim aimed at influencing classification",
+            "3": "Explicit override or system-impersonation language attempting to force a specific verdict"
+          },
+          "probabilities": {
+            "0": 1,
+            "1": 0,
+            "2": 0,
+            "3": 0
+          }
+        },
+        "formulaic_rhetorical_hook": {
+          "type": "noul",
+          "noul": 0.05
+        },
+        "fake_profound_framing": {
+          "type": "noul",
+          "noul": 0.03
+        },
+        "vague_sourcing": {
+          "type": "noul",
+          "noul": 0.03
+        },
+        "corporate_phrasing_density": {
+          "type": "score",
+          "score": 0.08,
+          "confidence": 0.88,
+          "legend": {
+            "0": "None of this kind of language",
+            "1": "Some of this kind of language, mixed with concrete content",
+            "2": "Heavily dominated by this kind of language"
+          },
+          "probabilities": {
+            "0": 0.92,
+            "1": 0.08,
+            "2": 0
+          }
+        }
+      },
+      "error": null
+    },
+    {
+      "id": "EX-012",
+      "split": "held_out",
+      "userLabel": "keep",
+      "decision": "keep",
+      "reasonCodes": [
+        "concrete_substance_high"
+      ],
+      "modelUsed": "jev-1.13.0",
+      "usage": {
+        "input_tokens": 1228,
+        "output_tokens": 198
+      },
+      "latencyMs": 128,
+      "answers": {
+        "engagement_bait": {
+          "type": "noul",
+          "noul": 0.02
+        },
+        "generic_filler": {
+          "type": "score",
+          "score": 0.24,
+          "confidence": 0.65,
+          "legend": {
+            "0": "Every claim is specific to this post's actual subject",
+            "1": "A mix of specific content and generic filler phrases or sentiment",
+            "2": "Mostly or entirely generic sentiment that could apply to nearly anything"
+          },
+          "probabilities": {
+            "0": 0.77,
+            "1": 0.23,
+            "2": 0
+          }
+        },
+        "concrete_substance": {
+          "type": "score",
+          "score": 1.99,
+          "confidence": 0.99,
+          "legend": {
+            "0": "No specific detail; purely abstract or vague",
+            "1": "Some specific detail mixed with generic statements",
+            "2": "Substantially concrete: numbers, mechanisms, or specific steps are central to the post"
+          },
+          "probabilities": {
+            "0": 0,
+            "1": 0.01,
+            "2": 0.99
+          }
+        },
+        "formulaic_storytelling": {
+          "type": "noul",
+          "noul": 0.3
+        },
+        "adversarial_instruction": {
+          "type": "noul",
+          "noul": 0.02
+        },
+        "adversarial_severity": {
+          "type": "score",
+          "score": 0,
+          "confidence": 1,
+          "legend": {
+            "0": "No such language present",
+            "1": "Mentions AI or classifiers incidentally, not as an instruction",
+            "2": "Contains a clear instruction or claim aimed at influencing classification",
+            "3": "Explicit override or system-impersonation language attempting to force a specific verdict"
+          },
+          "probabilities": {
+            "0": 1,
+            "1": 0,
+            "2": 0,
+            "3": 0
+          }
+        },
+        "formulaic_rhetorical_hook": {
+          "type": "noul",
+          "noul": 0.52
+        },
+        "fake_profound_framing": {
+          "type": "noul",
+          "noul": 0.56
+        },
+        "vague_sourcing": {
+          "type": "noul",
+          "noul": 0.25
+        },
+        "corporate_phrasing_density": {
+          "type": "score",
+          "score": 0.24,
+          "confidence": 0.65,
+          "legend": {
+            "0": "None of this kind of language",
+            "1": "Some of this kind of language, mixed with concrete content",
+            "2": "Heavily dominated by this kind of language"
+          },
+          "probabilities": {
+            "0": 0.77,
+            "1": 0.23,
+            "2": 0
+          }
+        }
+      },
+      "error": null
+    },
+    {
+      "id": "EX-013",
+      "split": "dev",
+      "userLabel": "keep",
+      "decision": "keep",
+      "reasonCodes": [
+        "concrete_substance_high"
+      ],
+      "modelUsed": "jev-1.13.0",
+      "usage": {
+        "input_tokens": 1238,
+        "output_tokens": 198
+      },
+      "latencyMs": 128,
+      "answers": {
+        "engagement_bait": {
+          "type": "noul",
+          "noul": 0.04
+        },
+        "generic_filler": {
+          "type": "score",
+          "score": 0.01,
+          "confidence": 0.99,
+          "legend": {
+            "0": "Every claim is specific to this post's actual subject",
+            "1": "A mix of specific content and generic filler phrases or sentiment",
+            "2": "Mostly or entirely generic sentiment that could apply to nearly anything"
+          },
+          "probabilities": {
+            "0": 0.99,
+            "1": 0.01,
+            "2": 0
+          }
+        },
+        "concrete_substance": {
+          "type": "score",
+          "score": 2,
+          "confidence": 1,
+          "legend": {
+            "0": "No specific detail; purely abstract or vague",
+            "1": "Some specific detail mixed with generic statements",
+            "2": "Substantially concrete: numbers, mechanisms, or specific steps are central to the post"
+          },
+          "probabilities": {
+            "0": 0,
+            "1": 0,
+            "2": 1
+          }
+        },
+        "formulaic_storytelling": {
+          "type": "noul",
+          "noul": 0.06
+        },
+        "adversarial_instruction": {
+          "type": "noul",
+          "noul": 0.02
+        },
+        "adversarial_severity": {
+          "type": "score",
+          "score": 0,
+          "confidence": 1,
+          "legend": {
+            "0": "No such language present",
+            "1": "Mentions AI or classifiers incidentally, not as an instruction",
+            "2": "Contains a clear instruction or claim aimed at influencing classification",
+            "3": "Explicit override or system-impersonation language attempting to force a specific verdict"
+          },
+          "probabilities": {
+            "0": 1,
+            "1": 0,
+            "2": 0,
+            "3": 0
+          }
+        },
+        "formulaic_rhetorical_hook": {
+          "type": "noul",
+          "noul": 0.54
+        },
+        "fake_profound_framing": {
+          "type": "noul",
+          "noul": 0.03
+        },
+        "vague_sourcing": {
+          "type": "noul",
+          "noul": 0.03
+        },
+        "corporate_phrasing_density": {
+          "type": "score",
+          "score": 0,
+          "confidence": 1,
+          "legend": {
+            "0": "None of this kind of language",
+            "1": "Some of this kind of language, mixed with concrete content",
+            "2": "Heavily dominated by this kind of language"
+          },
+          "probabilities": {
+            "0": 1,
+            "1": 0,
+            "2": 0
+          }
+        }
+      },
+      "error": null
+    },
+    {
+      "id": "EX-014",
+      "split": "dev",
+      "userLabel": "keep",
+      "decision": "keep",
+      "reasonCodes": [
+        "concrete_substance_high"
+      ],
+      "modelUsed": "jev-1.13.0",
+      "usage": {
+        "input_tokens": 1241,
+        "output_tokens": 198
+      },
+      "latencyMs": 194,
+      "answers": {
+        "engagement_bait": {
+          "type": "noul",
+          "noul": 0.02
+        },
+        "generic_filler": {
+          "type": "score",
+          "score": 0.17,
+          "confidence": 0.75,
+          "legend": {
+            "0": "Every claim is specific to this post's actual subject",
+            "1": "A mix of specific content and generic filler phrases or sentiment",
+            "2": "Mostly or entirely generic sentiment that could apply to nearly anything"
+          },
+          "probabilities": {
+            "0": 0.84,
+            "1": 0.15,
+            "2": 0.01
+          }
+        },
+        "concrete_substance": {
+          "type": "score",
+          "score": 1.98,
+          "confidence": 0.97,
+          "legend": {
+            "0": "No specific detail; purely abstract or vague",
+            "1": "Some specific detail mixed with generic statements",
+            "2": "Substantially concrete: numbers, mechanisms, or specific steps are central to the post"
+          },
+          "probabilities": {
+            "0": 0,
+            "1": 0.02,
+            "2": 0.98
+          }
+        },
+        "formulaic_storytelling": {
+          "type": "noul",
+          "noul": 0.17
+        },
+        "adversarial_instruction": {
+          "type": "noul",
+          "noul": 0.01
+        },
+        "adversarial_severity": {
+          "type": "score",
+          "score": 0,
+          "confidence": 1,
+          "legend": {
+            "0": "No such language present",
+            "1": "Mentions AI or classifiers incidentally, not as an instruction",
+            "2": "Contains a clear instruction or claim aimed at influencing classification",
+            "3": "Explicit override or system-impersonation language attempting to force a specific verdict"
+          },
+          "probabilities": {
+            "0": 1,
+            "1": 0,
+            "2": 0,
+            "3": 0
+          }
+        },
+        "formulaic_rhetorical_hook": {
+          "type": "noul",
+          "noul": 0.84
+        },
+        "fake_profound_framing": {
+          "type": "noul",
+          "noul": 0.25
+        },
+        "vague_sourcing": {
+          "type": "noul",
+          "noul": 0.07
+        },
+        "corporate_phrasing_density": {
+          "type": "score",
+          "score": 0.15,
+          "confidence": 0.77,
+          "legend": {
+            "0": "None of this kind of language",
+            "1": "Some of this kind of language, mixed with concrete content",
+            "2": "Heavily dominated by this kind of language"
+          },
+          "probabilities": {
+            "0": 0.85,
+            "1": 0.15,
+            "2": 0
+          }
+        }
+      },
+      "error": null
+    },
+    {
+      "id": "EX-015",
+      "split": "held_out",
+      "userLabel": "keep",
+      "decision": "keep",
+      "reasonCodes": [
+        "concrete_substance_high"
+      ],
+      "modelUsed": "jev-1.13.0",
+      "usage": {
+        "input_tokens": 1227,
+        "output_tokens": 198
+      },
+      "latencyMs": 178,
+      "answers": {
+        "engagement_bait": {
+          "type": "noul",
+          "noul": 0.02
+        },
+        "generic_filler": {
+          "type": "score",
+          "score": 0.39,
+          "confidence": 0.41,
+          "legend": {
+            "0": "Every claim is specific to this post's actual subject",
+            "1": "A mix of specific content and generic filler phrases or sentiment",
+            "2": "Mostly or entirely generic sentiment that could apply to nearly anything"
+          },
+          "probabilities": {
+            "0": 0.61,
+            "1": 0.39,
+            "2": 0
+          }
+        },
+        "concrete_substance": {
+          "type": "score",
+          "score": 2,
+          "confidence": 1,
+          "legend": {
+            "0": "No specific detail; purely abstract or vague",
+            "1": "Some specific detail mixed with generic statements",
+            "2": "Substantially concrete: numbers, mechanisms, or specific steps are central to the post"
+          },
+          "probabilities": {
+            "0": 0,
+            "1": 0,
+            "2": 1
+          }
+        },
+        "formulaic_storytelling": {
+          "type": "noul",
+          "noul": 0.06
+        },
+        "adversarial_instruction": {
+          "type": "noul",
+          "noul": 0.02
+        },
+        "adversarial_severity": {
+          "type": "score",
+          "score": 0.64,
+          "confidence": 0.64,
+          "legend": {
+            "0": "No such language present",
+            "1": "Mentions AI or classifiers incidentally, not as an instruction",
+            "2": "Contains a clear instruction or claim aimed at influencing classification",
+            "3": "Explicit override or system-impersonation language attempting to force a specific verdict"
+          },
+          "probabilities": {
+            "0": 0.36,
+            "1": 0.64,
+            "2": 0,
+            "3": 0
+          }
+        },
+        "formulaic_rhetorical_hook": {
+          "type": "noul",
+          "noul": 0.61
+        },
+        "fake_profound_framing": {
+          "type": "noul",
+          "noul": 0.08
+        },
+        "vague_sourcing": {
+          "type": "noul",
+          "noul": 0.04
+        },
+        "corporate_phrasing_density": {
+          "type": "score",
+          "score": 0.15,
+          "confidence": 0.77,
+          "legend": {
+            "0": "None of this kind of language",
+            "1": "Some of this kind of language, mixed with concrete content",
+            "2": "Heavily dominated by this kind of language"
+          },
+          "probabilities": {
+            "0": 0.85,
+            "1": 0.15,
+            "2": 0
+          }
+        }
+      },
+      "error": null
+    },
+    {
+      "id": "EX-016",
+      "split": "dev",
+      "userLabel": "keep",
+      "decision": "uncertain",
+      "reasonCodes": [],
+      "modelUsed": "jev-1.13.0",
+      "usage": {
+        "input_tokens": 1217,
+        "output_tokens": 198
+      },
+      "latencyMs": 167,
+      "answers": {
+        "engagement_bait": {
+          "type": "noul",
+          "noul": 0.02
+        },
+        "generic_filler": {
+          "type": "score",
+          "score": 1.12,
+          "confidence": 0.81,
+          "legend": {
+            "0": "Every claim is specific to this post's actual subject",
+            "1": "A mix of specific content and generic filler phrases or sentiment",
+            "2": "Mostly or entirely generic sentiment that could apply to nearly anything"
+          },
+          "probabilities": {
+            "0": 0.01,
+            "1": 0.87,
+            "2": 0.12
+          }
+        },
+        "concrete_substance": {
+          "type": "score",
+          "score": 0.74,
+          "confidence": 0.6,
+          "legend": {
+            "0": "No specific detail; purely abstract or vague",
+            "1": "Some specific detail mixed with generic statements",
+            "2": "Substantially concrete: numbers, mechanisms, or specific steps are central to the post"
+          },
+          "probabilities": {
+            "0": 0.26,
+            "1": 0.74,
+            "2": 0
+          }
+        },
+        "formulaic_storytelling": {
+          "type": "noul",
+          "noul": 0.01
+        },
+        "adversarial_instruction": {
+          "type": "noul",
+          "noul": 0.01
+        },
+        "adversarial_severity": {
+          "type": "score",
+          "score": 0,
+          "confidence": 1,
+          "legend": {
+            "0": "No such language present",
+            "1": "Mentions AI or classifiers incidentally, not as an instruction",
+            "2": "Contains a clear instruction or claim aimed at influencing classification",
+            "3": "Explicit override or system-impersonation language attempting to force a specific verdict"
+          },
+          "probabilities": {
+            "0": 1,
+            "1": 0,
+            "2": 0,
+            "3": 0
+          }
+        },
+        "formulaic_rhetorical_hook": {
+          "type": "noul",
+          "noul": 0.03
+        },
+        "fake_profound_framing": {
+          "type": "noul",
+          "noul": 0.06
+        },
+        "vague_sourcing": {
+          "type": "noul",
+          "noul": 0.01
+        },
+        "corporate_phrasing_density": {
+          "type": "score",
+          "score": 0.88,
+          "confidence": 0.24,
+          "legend": {
+            "0": "None of this kind of language",
+            "1": "Some of this kind of language, mixed with concrete content",
+            "2": "Heavily dominated by this kind of language"
+          },
+          "probabilities": {
+            "0": 0.31,
+            "1": 0.5,
+            "2": 0.19
+          }
+        }
+      },
+      "error": null
+    },
+    {
+      "id": "EX-017",
+      "split": "dev",
+      "userLabel": "keep",
+      "decision": "keep",
+      "reasonCodes": [],
+      "modelUsed": "jev-1.13.0",
+      "usage": {
+        "input_tokens": 1213,
+        "output_tokens": 198
+      },
+      "latencyMs": 143,
+      "answers": {
+        "engagement_bait": {
+          "type": "noul",
+          "noul": 0.04
+        },
+        "generic_filler": {
+          "type": "score",
+          "score": 0.43,
+          "confidence": 0.35,
+          "legend": {
+            "0": "Every claim is specific to this post's actual subject",
+            "1": "A mix of specific content and generic filler phrases or sentiment",
+            "2": "Mostly or entirely generic sentiment that could apply to nearly anything"
+          },
+          "probabilities": {
+            "0": 0.57,
+            "1": 0.43,
+            "2": 0
+          }
+        },
+        "concrete_substance": {
+          "type": "score",
+          "score": 1.16,
+          "confidence": 0.76,
+          "legend": {
+            "0": "No specific detail; purely abstract or vague",
+            "1": "Some specific detail mixed with generic statements",
+            "2": "Substantially concrete: numbers, mechanisms, or specific steps are central to the post"
+          },
+          "probabilities": {
+            "0": 0,
+            "1": 0.84,
+            "2": 0.16
+          }
+        },
+        "formulaic_storytelling": {
+          "type": "noul",
+          "noul": 0.01
+        },
+        "adversarial_instruction": {
+          "type": "noul",
+          "noul": 0.02
+        },
+        "adversarial_severity": {
+          "type": "score",
+          "score": 0,
+          "confidence": 1,
+          "legend": {
+            "0": "No such language present",
+            "1": "Mentions AI or classifiers incidentally, not as an instruction",
+            "2": "Contains a clear instruction or claim aimed at influencing classification",
+            "3": "Explicit override or system-impersonation language attempting to force a specific verdict"
+          },
+          "probabilities": {
+            "0": 1,
+            "1": 0,
+            "2": 0,
+            "3": 0
+          }
+        },
+        "formulaic_rhetorical_hook": {
+          "type": "noul",
+          "noul": 0.04
+        },
+        "fake_profound_framing": {
+          "type": "noul",
+          "noul": 0.03
+        },
+        "vague_sourcing": {
+          "type": "noul",
+          "noul": 0.02
+        },
+        "corporate_phrasing_density": {
+          "type": "score",
+          "score": 0.17,
+          "confidence": 0.75,
+          "legend": {
+            "0": "None of this kind of language",
+            "1": "Some of this kind of language, mixed with concrete content",
+            "2": "Heavily dominated by this kind of language"
+          },
+          "probabilities": {
+            "0": 0.83,
+            "1": 0.17,
+            "2": 0
+          }
+        }
+      },
+      "error": null
+    },
+    {
+      "id": "EX-018",
+      "split": "held_out",
+      "userLabel": "keep",
+      "decision": "keep",
+      "reasonCodes": [],
+      "modelUsed": "jev-1.13.0",
+      "usage": {
+        "input_tokens": 1219,
+        "output_tokens": 198
+      },
+      "latencyMs": 124,
+      "answers": {
+        "engagement_bait": {
+          "type": "noul",
+          "noul": 0.01
+        },
+        "generic_filler": {
+          "type": "score",
+          "score": 0.58,
+          "confidence": 0.35,
+          "legend": {
+            "0": "Every claim is specific to this post's actual subject",
+            "1": "A mix of specific content and generic filler phrases or sentiment",
+            "2": "Mostly or entirely generic sentiment that could apply to nearly anything"
+          },
+          "probabilities": {
+            "0": 0.43,
+            "1": 0.5599999999999999,
+            "2": 0.01
+          }
+        },
+        "concrete_substance": {
+          "type": "score",
+          "score": 0.82,
+          "confidence": 0.73,
+          "legend": {
+            "0": "No specific detail; purely abstract or vague",
+            "1": "Some specific detail mixed with generic statements",
+            "2": "Substantially concrete: numbers, mechanisms, or specific steps are central to the post"
+          },
+          "probabilities": {
+            "0": 0.18,
+            "1": 0.82,
+            "2": 0
+          }
+        },
+        "formulaic_storytelling": {
+          "type": "noul",
+          "noul": 0.02
+        },
+        "adversarial_instruction": {
+          "type": "noul",
+          "noul": 0.01
+        },
+        "adversarial_severity": {
+          "type": "score",
+          "score": 0,
+          "confidence": 1,
+          "legend": {
+            "0": "No such language present",
+            "1": "Mentions AI or classifiers incidentally, not as an instruction",
+            "2": "Contains a clear instruction or claim aimed at influencing classification",
+            "3": "Explicit override or system-impersonation language attempting to force a specific verdict"
+          },
+          "probabilities": {
+            "0": 1,
+            "1": 0,
+            "2": 0,
+            "3": 0
+          }
+        },
+        "formulaic_rhetorical_hook": {
+          "type": "noul",
+          "noul": 0.03
+        },
+        "fake_profound_framing": {
+          "type": "noul",
+          "noul": 0.08
+        },
+        "vague_sourcing": {
+          "type": "noul",
+          "noul": 0.01
+        },
+        "corporate_phrasing_density": {
+          "type": "score",
+          "score": 0.01,
+          "confidence": 0.99,
+          "legend": {
+            "0": "None of this kind of language",
+            "1": "Some of this kind of language, mixed with concrete content",
+            "2": "Heavily dominated by this kind of language"
+          },
+          "probabilities": {
+            "0": 0.99,
+            "1": 0.01,
+            "2": 0
+          }
+        }
+      },
+      "error": null
+    },
+    {
+      "id": "EX-019",
+      "split": "dev",
+      "userLabel": "keep",
+      "decision": "keep",
+      "reasonCodes": [
+        "concrete_substance_high"
+      ],
+      "modelUsed": "jev-1.13.0",
+      "usage": {
+        "input_tokens": 1221,
+        "output_tokens": 198
+      },
+      "latencyMs": 137,
+      "answers": {
+        "engagement_bait": {
+          "type": "noul",
+          "noul": 0.02
+        },
+        "generic_filler": {
+          "type": "score",
+          "score": 0.02,
+          "confidence": 0.97,
+          "legend": {
+            "0": "Every claim is specific to this post's actual subject",
+            "1": "A mix of specific content and generic filler phrases or sentiment",
+            "2": "Mostly or entirely generic sentiment that could apply to nearly anything"
+          },
+          "probabilities": {
+            "0": 0.98,
+            "1": 0.02,
+            "2": 0
+          }
+        },
+        "concrete_substance": {
+          "type": "score",
+          "score": 1.72,
+          "confidence": 0.58,
+          "legend": {
+            "0": "No specific detail; purely abstract or vague",
+            "1": "Some specific detail mixed with generic statements",
+            "2": "Substantially concrete: numbers, mechanisms, or specific steps are central to the post"
+          },
+          "probabilities": {
+            "0": 0,
+            "1": 0.28,
+            "2": 0.72
+          }
+        },
+        "formulaic_storytelling": {
+          "type": "noul",
+          "noul": 0.01
+        },
+        "adversarial_instruction": {
+          "type": "noul",
+          "noul": 0.01
+        },
+        "adversarial_severity": {
+          "type": "score",
+          "score": 0,
+          "confidence": 1,
+          "legend": {
+            "0": "No such language present",
+            "1": "Mentions AI or classifiers incidentally, not as an instruction",
+            "2": "Contains a clear instruction or claim aimed at influencing classification",
+            "3": "Explicit override or system-impersonation language attempting to force a specific verdict"
+          },
+          "probabilities": {
+            "0": 1,
+            "1": 0,
+            "2": 0,
+            "3": 0
+          }
+        },
+        "formulaic_rhetorical_hook": {
+          "type": "noul",
+          "noul": 0.03
+        },
+        "fake_profound_framing": {
+          "type": "noul",
+          "noul": 0.03
+        },
+        "vague_sourcing": {
+          "type": "noul",
+          "noul": 0.02
+        },
+        "corporate_phrasing_density": {
+          "type": "score",
+          "score": 0.02,
+          "confidence": 0.97,
+          "legend": {
+            "0": "None of this kind of language",
+            "1": "Some of this kind of language, mixed with concrete content",
+            "2": "Heavily dominated by this kind of language"
+          },
+          "probabilities": {
+            "0": 0.98,
+            "1": 0.02,
+            "2": 0
+          }
+        }
+      },
+      "error": null
+    },
+    {
+      "id": "EX-020",
+      "split": "dev",
+      "userLabel": "keep",
+      "decision": "keep",
+      "reasonCodes": [],
+      "modelUsed": "jev-1.13.0",
+      "usage": {
+        "input_tokens": 1222,
+        "output_tokens": 198
+      },
+      "latencyMs": 198,
+      "answers": {
+        "engagement_bait": {
+          "type": "noul",
+          "noul": 0.02
+        },
+        "generic_filler": {
+          "type": "score",
+          "score": 0.03,
+          "confidence": 0.95,
+          "legend": {
+            "0": "Every claim is specific to this post's actual subject",
+            "1": "A mix of specific content and generic filler phrases or sentiment",
+            "2": "Mostly or entirely generic sentiment that could apply to nearly anything"
+          },
+          "probabilities": {
+            "0": 0.97,
+            "1": 0.03,
+            "2": 0
+          }
+        },
+        "concrete_substance": {
+          "type": "score",
+          "score": 1.01,
+          "confidence": 0.97,
+          "legend": {
+            "0": "No specific detail; purely abstract or vague",
+            "1": "Some specific detail mixed with generic statements",
+            "2": "Substantially concrete: numbers, mechanisms, or specific steps are central to the post"
+          },
+          "probabilities": {
+            "0": 0,
+            "1": 0.99,
+            "2": 0.01
+          }
+        },
+        "formulaic_storytelling": {
+          "type": "noul",
+          "noul": 0.03
+        },
+        "adversarial_instruction": {
+          "type": "noul",
+          "noul": 0.01
+        },
+        "adversarial_severity": {
+          "type": "score",
+          "score": 0,
+          "confidence": 1,
+          "legend": {
+            "0": "No such language present",
+            "1": "Mentions AI or classifiers incidentally, not as an instruction",
+            "2": "Contains a clear instruction or claim aimed at influencing classification",
+            "3": "Explicit override or system-impersonation language attempting to force a specific verdict"
+          },
+          "probabilities": {
+            "0": 1,
+            "1": 0,
+            "2": 0,
+            "3": 0
+          }
+        },
+        "formulaic_rhetorical_hook": {
+          "type": "noul",
+          "noul": 0.04
+        },
+        "fake_profound_framing": {
+          "type": "noul",
+          "noul": 0.03
+        },
+        "vague_sourcing": {
+          "type": "noul",
+          "noul": 0.03
+        },
+        "corporate_phrasing_density": {
+          "type": "score",
+          "score": 0,
+          "confidence": 0.99,
+          "legend": {
+            "0": "None of this kind of language",
+            "1": "Some of this kind of language, mixed with concrete content",
+            "2": "Heavily dominated by this kind of language"
+          },
+          "probabilities": {
+            "0": 1,
+            "1": 0,
+            "2": 0
+          }
+        }
+      },
+      "error": null
+    },
+    {
+      "id": "EX-021",
+      "split": "held_out",
+      "userLabel": "keep",
+      "decision": "uncertain",
+      "reasonCodes": [
+        "formulaic_storytelling"
+      ],
+      "modelUsed": "jev-1.13.0",
+      "usage": {
+        "input_tokens": 1207,
+        "output_tokens": 198
+      },
+      "latencyMs": 299,
+      "answers": {
+        "engagement_bait": {
+          "type": "noul",
+          "noul": 0.03
+        },
+        "generic_filler": {
+          "type": "score",
+          "score": 1.32,
+          "confidence": 0,
+          "legend": {
+            "0": "Every claim is specific to this post's actual subject",
+            "1": "A mix of specific content and generic filler phrases or sentiment",
+            "2": "Mostly or entirely generic sentiment that could apply to nearly anything"
+          },
+          "probabilities": {
+            "0": 0.28,
+            "1": 0.13,
+            "2": 0.59
+          }
+        },
+        "concrete_substance": {
+          "type": "score",
+          "score": 0.79,
+          "confidence": 0.61,
+          "legend": {
+            "0": "No specific detail; purely abstract or vague",
+            "1": "Some specific detail mixed with generic statements",
+            "2": "Substantially concrete: numbers, mechanisms, or specific steps are central to the post"
+          },
+          "probabilities": {
+            "0": 0.24,
+            "1": 0.74,
+            "2": 0.02
+          }
+        },
+        "formulaic_storytelling": {
+          "type": "noul",
+          "noul": 0.59
+        },
+        "adversarial_instruction": {
+          "type": "noul",
+          "noul": 0.05
+        },
+        "adversarial_severity": {
+          "type": "score",
+          "score": 0.07,
+          "confidence": 0.93,
+          "legend": {
+            "0": "No such language present",
+            "1": "Mentions AI or classifiers incidentally, not as an instruction",
+            "2": "Contains a clear instruction or claim aimed at influencing classification",
+            "3": "Explicit override or system-impersonation language attempting to force a specific verdict"
+          },
+          "probabilities": {
+            "0": 0.96,
+            "1": 0.01,
+            "2": 0.03,
+            "3": 0
+          }
+        },
+        "formulaic_rhetorical_hook": {
+          "type": "noul",
+          "noul": 0.15
+        },
+        "fake_profound_framing": {
+          "type": "noul",
+          "noul": 0.24
+        },
+        "vague_sourcing": {
+          "type": "noul",
+          "noul": 0.07
+        },
+        "corporate_phrasing_density": {
+          "type": "score",
+          "score": 0.5,
+          "confidence": 0.24,
+          "legend": {
+            "0": "None of this kind of language",
+            "1": "Some of this kind of language, mixed with concrete content",
+            "2": "Heavily dominated by this kind of language"
+          },
+          "probabilities": {
+            "0": 0.59,
+            "1": 0.31,
+            "2": 0.1
+          }
+        }
+      },
+      "error": null
+    },
+    {
+      "id": "EX-022",
+      "split": "dev",
+      "userLabel": "keep",
+      "decision": "keep",
+      "reasonCodes": [],
+      "modelUsed": "jev-1.13.0",
+      "usage": {
+        "input_tokens": 1222,
+        "output_tokens": 198
+      },
+      "latencyMs": 175,
+      "answers": {
+        "engagement_bait": {
+          "type": "noul",
+          "noul": 0.04
+        },
+        "generic_filler": {
+          "type": "score",
+          "score": 0.53,
+          "confidence": 0.21,
+          "legend": {
+            "0": "Every claim is specific to this post's actual subject",
+            "1": "A mix of specific content and generic filler phrases or sentiment",
+            "2": "Mostly or entirely generic sentiment that could apply to nearly anything"
+          },
+          "probabilities": {
+            "0": 0.65,
+            "1": 0.18,
+            "2": 0.17
+          }
+        },
+        "concrete_substance": {
+          "type": "score",
+          "score": 1.08,
+          "confidence": 0.7,
+          "legend": {
+            "0": "No specific detail; purely abstract or vague",
+            "1": "Some specific detail mixed with generic statements",
+            "2": "Substantially concrete: numbers, mechanisms, or specific steps are central to the post"
+          },
+          "probabilities": {
+            "0": 0.06,
+            "1": 0.8,
+            "2": 0.14
+          }
+        },
+        "formulaic_storytelling": {
+          "type": "noul",
+          "noul": 0.08
+        },
+        "adversarial_instruction": {
+          "type": "noul",
+          "noul": 0.02
+        },
+        "adversarial_severity": {
+          "type": "score",
+          "score": 0,
+          "confidence": 1,
+          "legend": {
+            "0": "No such language present",
+            "1": "Mentions AI or classifiers incidentally, not as an instruction",
+            "2": "Contains a clear instruction or claim aimed at influencing classification",
+            "3": "Explicit override or system-impersonation language attempting to force a specific verdict"
+          },
+          "probabilities": {
+            "0": 1,
+            "1": 0,
+            "2": 0,
+            "3": 0
+          }
+        },
+        "formulaic_rhetorical_hook": {
+          "type": "noul",
+          "noul": 0.77
+        },
+        "fake_profound_framing": {
+          "type": "noul",
+          "noul": 0.07
+        },
+        "vague_sourcing": {
+          "type": "noul",
+          "noul": 0.06
+        },
+        "corporate_phrasing_density": {
+          "type": "score",
+          "score": 0.14,
+          "confidence": 0.79,
+          "legend": {
+            "0": "None of this kind of language",
+            "1": "Some of this kind of language, mixed with concrete content",
+            "2": "Heavily dominated by this kind of language"
+          },
+          "probabilities": {
+            "0": 0.87,
+            "1": 0.12,
+            "2": 0.01
+          }
+        }
+      },
+      "error": null
+    },
+    {
+      "id": "EX-023",
+      "split": "dev",
+      "userLabel": "unsure",
+      "decision": "uncertain",
+      "reasonCodes": [
+        "generic_filler"
+      ],
+      "modelUsed": "jev-1.13.0",
+      "usage": {
+        "input_tokens": 1183,
+        "output_tokens": 198
+      },
+      "latencyMs": 203,
+      "answers": {
+        "engagement_bait": {
+          "type": "noul",
+          "noul": 0.03
+        },
+        "generic_filler": {
+          "type": "score",
+          "score": 1.93,
+          "confidence": 0.9,
+          "legend": {
+            "0": "Every claim is specific to this post's actual subject",
+            "1": "A mix of specific content and generic filler phrases or sentiment",
+            "2": "Mostly or entirely generic sentiment that could apply to nearly anything"
+          },
+          "probabilities": {
+            "0": 0.03,
+            "1": 0,
+            "2": 0.97
+          }
+        },
+        "concrete_substance": {
+          "type": "score",
+          "score": 0,
+          "confidence": 1,
+          "legend": {
+            "0": "No specific detail; purely abstract or vague",
+            "1": "Some specific detail mixed with generic statements",
+            "2": "Substantially concrete: numbers, mechanisms, or specific steps are central to the post"
+          },
+          "probabilities": {
+            "0": 1,
+            "1": 0,
+            "2": 0
+          }
+        },
+        "formulaic_storytelling": {
+          "type": "noul",
+          "noul": 0.02
+        },
+        "adversarial_instruction": {
+          "type": "noul",
+          "noul": 0.02
+        },
+        "adversarial_severity": {
+          "type": "score",
+          "score": 0,
+          "confidence": 1,
+          "legend": {
+            "0": "No such language present",
+            "1": "Mentions AI or classifiers incidentally, not as an instruction",
+            "2": "Contains a clear instruction or claim aimed at influencing classification",
+            "3": "Explicit override or system-impersonation language attempting to force a specific verdict"
+          },
+          "probabilities": {
+            "0": 1,
+            "1": 0,
+            "2": 0,
+            "3": 0
+          }
+        },
+        "formulaic_rhetorical_hook": {
+          "type": "noul",
+          "noul": 0.05
+        },
+        "fake_profound_framing": {
+          "type": "noul",
+          "noul": 0.05
+        },
+        "vague_sourcing": {
+          "type": "noul",
+          "noul": 0.04
+        },
+        "corporate_phrasing_density": {
+          "type": "score",
+          "score": 0.03,
+          "confidence": 0.96,
+          "legend": {
+            "0": "None of this kind of language",
+            "1": "Some of this kind of language, mixed with concrete content",
+            "2": "Heavily dominated by this kind of language"
+          },
+          "probabilities": {
+            "0": 0.99,
+            "1": 0,
+            "2": 0.01
+          }
+        }
+      },
+      "error": null
+    },
+    {
+      "id": "EX-024",
+      "split": "held_out",
+      "userLabel": "unsure",
+      "decision": "uncertain",
+      "reasonCodes": [
+        "generic_filler"
+      ],
+      "modelUsed": "jev-1.13.0",
+      "usage": {
+        "input_tokens": 1187,
+        "output_tokens": 198
+      },
+      "latencyMs": 181,
+      "answers": {
+        "engagement_bait": {
+          "type": "noul",
+          "noul": 0.02
+        },
+        "generic_filler": {
+          "type": "score",
+          "score": 1.99,
+          "confidence": 0.98,
+          "legend": {
+            "0": "Every claim is specific to this post's actual subject",
+            "1": "A mix of specific content and generic filler phrases or sentiment",
+            "2": "Mostly or entirely generic sentiment that could apply to nearly anything"
+          },
+          "probabilities": {
+            "0": 0.01,
+            "1": 0,
+            "2": 0.99
+          }
+        },
+        "concrete_substance": {
+          "type": "score",
+          "score": 0,
+          "confidence": 1,
+          "legend": {
+            "0": "No specific detail; purely abstract or vague",
+            "1": "Some specific detail mixed with generic statements",
+            "2": "Substantially concrete: numbers, mechanisms, or specific steps are central to the post"
+          },
+          "probabilities": {
+            "0": 1,
+            "1": 0,
+            "2": 0
+          }
+        },
+        "formulaic_storytelling": {
+          "type": "noul",
+          "noul": 0.02
+        },
+        "adversarial_instruction": {
+          "type": "noul",
+          "noul": 0.02
+        },
+        "adversarial_severity": {
+          "type": "score",
+          "score": 0,
+          "confidence": 1,
+          "legend": {
+            "0": "No such language present",
+            "1": "Mentions AI or classifiers incidentally, not as an instruction",
+            "2": "Contains a clear instruction or claim aimed at influencing classification",
+            "3": "Explicit override or system-impersonation language attempting to force a specific verdict"
+          },
+          "probabilities": {
+            "0": 1,
+            "1": 0,
+            "2": 0,
+            "3": 0
+          }
+        },
+        "formulaic_rhetorical_hook": {
+          "type": "noul",
+          "noul": 0.03
+        },
+        "fake_profound_framing": {
+          "type": "noul",
+          "noul": 0.05
+        },
+        "vague_sourcing": {
+          "type": "noul",
+          "noul": 0.02
+        },
+        "corporate_phrasing_density": {
+          "type": "score",
+          "score": 0.25,
+          "confidence": 0.63,
+          "legend": {
+            "0": "None of this kind of language",
+            "1": "Some of this kind of language, mixed with concrete content",
+            "2": "Heavily dominated by this kind of language"
+          },
+          "probabilities": {
+            "0": 0.87,
+            "1": 0.02,
+            "2": 0.11
+          }
+        }
+      },
+      "error": null
+    },
+    {
+      "id": "EX-025",
+      "split": "dev",
+      "userLabel": "unsure",
+      "decision": "uncertain",
+      "reasonCodes": [
+        "formulaic_rhetorical_hook",
+        "generic_filler"
+      ],
+      "modelUsed": "jev-1.13.0",
+      "usage": {
+        "input_tokens": 1189,
+        "output_tokens": 198
+      },
+      "latencyMs": 134,
+      "answers": {
+        "engagement_bait": {
+          "type": "noul",
+          "noul": 0.05
+        },
+        "generic_filler": {
+          "type": "score",
+          "score": 1.72,
+          "confidence": 0.58,
+          "legend": {
+            "0": "Every claim is specific to this post's actual subject",
+            "1": "A mix of specific content and generic filler phrases or sentiment",
+            "2": "Mostly or entirely generic sentiment that could apply to nearly anything"
+          },
+          "probabilities": {
+            "0": 0.13,
+            "1": 0.02,
+            "2": 0.85
+          }
+        },
+        "concrete_substance": {
+          "type": "score",
+          "score": 0,
+          "confidence": 1,
+          "legend": {
+            "0": "No specific detail; purely abstract or vague",
+            "1": "Some specific detail mixed with generic statements",
+            "2": "Substantially concrete: numbers, mechanisms, or specific steps are central to the post"
+          },
+          "probabilities": {
+            "0": 1,
+            "1": 0,
+            "2": 0
+          }
+        },
+        "formulaic_storytelling": {
+          "type": "noul",
+          "noul": 0.25
+        },
+        "adversarial_instruction": {
+          "type": "noul",
+          "noul": 0.02
+        },
+        "adversarial_severity": {
+          "type": "score",
+          "score": 0,
+          "confidence": 1,
+          "legend": {
+            "0": "No such language present",
+            "1": "Mentions AI or classifiers incidentally, not as an instruction",
+            "2": "Contains a clear instruction or claim aimed at influencing classification",
+            "3": "Explicit override or system-impersonation language attempting to force a specific verdict"
+          },
+          "probabilities": {
+            "0": 1,
+            "1": 0,
+            "2": 0,
+            "3": 0
+          }
+        },
+        "formulaic_rhetorical_hook": {
+          "type": "noul",
+          "noul": 0.78
+        },
+        "fake_profound_framing": {
+          "type": "noul",
+          "noul": 0.2
+        },
+        "vague_sourcing": {
+          "type": "noul",
+          "noul": 0.12
+        },
+        "corporate_phrasing_density": {
+          "type": "score",
+          "score": 0.25,
+          "confidence": 0.62,
+          "legend": {
+            "0": "None of this kind of language",
+            "1": "Some of this kind of language, mixed with concrete content",
+            "2": "Heavily dominated by this kind of language"
+          },
+          "probabilities": {
+            "0": 0.84,
+            "1": 0.06,
+            "2": 0.1
+          }
+        }
+      },
+      "error": null
+    },
+    {
+      "id": "EX-026",
+      "split": "held_out",
+      "userLabel": "filter",
+      "decision": "uncertain",
+      "reasonCodes": [
+        "adversarial_instruction_detected"
+      ],
+      "modelUsed": "jev-1.13.0",
+      "usage": {
+        "input_tokens": 1215,
+        "output_tokens": 198
+      },
+      "latencyMs": 122,
+      "answers": {
+        "engagement_bait": {
+          "type": "noul",
+          "noul": 0.03
+        },
+        "generic_filler": {
+          "type": "score",
+          "score": 1.66,
+          "confidence": 0.49,
+          "legend": {
+            "0": "Every claim is specific to this post's actual subject",
+            "1": "A mix of specific content and generic filler phrases or sentiment",
+            "2": "Mostly or entirely generic sentiment that could apply to nearly anything"
+          },
+          "probabilities": {
+            "0": 0.16,
+            "1": 0.02,
+            "2": 0.82
+          }
+        },
+        "concrete_substance": {
+          "type": "score",
+          "score": 0.1,
+          "confidence": 0.85,
+          "legend": {
+            "0": "No specific detail; purely abstract or vague",
+            "1": "Some specific detail mixed with generic statements",
+            "2": "Substantially concrete: numbers, mechanisms, or specific steps are central to the post"
+          },
+          "probabilities": {
+            "0": 0.92,
+            "1": 0.06,
+            "2": 0.02
+          }
+        },
+        "formulaic_storytelling": {
+          "type": "noul",
+          "noul": 0.02
+        },
+        "adversarial_instruction": {
+          "type": "noul",
+          "noul": 0.99
+        },
+        "adversarial_severity": {
+          "type": "score",
+          "score": 2.99,
+          "confidence": 0.99,
+          "legend": {
+            "0": "No such language present",
+            "1": "Mentions AI or classifiers incidentally, not as an instruction",
+            "2": "Contains a clear instruction or claim aimed at influencing classification",
+            "3": "Explicit override or system-impersonation language attempting to force a specific verdict"
+          },
+          "probabilities": {
+            "0": 0,
+            "1": 0,
+            "2": 0.01,
+            "3": 0.99
+          }
+        },
+        "formulaic_rhetorical_hook": {
+          "type": "noul",
+          "noul": 0.13
+        },
+        "fake_profound_framing": {
+          "type": "noul",
+          "noul": 0.09
+        },
+        "vague_sourcing": {
+          "type": "noul",
+          "noul": 0.06
+        },
+        "corporate_phrasing_density": {
+          "type": "score",
+          "score": 0.06,
+          "confidence": 0.92,
+          "legend": {
+            "0": "None of this kind of language",
+            "1": "Some of this kind of language, mixed with concrete content",
+            "2": "Heavily dominated by this kind of language"
+          },
+          "probabilities": {
+            "0": 0.97,
+            "1": 0.01,
+            "2": 0.02
+          }
+        }
+      },
+      "error": null
+    },
+    {
+      "id": "EX-027",
+      "split": "dev",
+      "userLabel": "unsure",
+      "decision": "uncertain",
+      "reasonCodes": [
+        "adversarial_instruction_detected"
+      ],
+      "modelUsed": "jev-1.13.0",
+      "usage": {
+        "input_tokens": 1218,
+        "output_tokens": 198
+      },
+      "latencyMs": 209,
+      "answers": {
+        "engagement_bait": {
+          "type": "noul",
+          "noul": 0.03
+        },
+        "generic_filler": {
+          "type": "score",
+          "score": 0.88,
+          "confidence": 0,
+          "legend": {
+            "0": "Every claim is specific to this post's actual subject",
+            "1": "A mix of specific content and generic filler phrases or sentiment",
+            "2": "Mostly or entirely generic sentiment that could apply to nearly anything"
+          },
+          "probabilities": {
+            "0": 0.41,
+            "1": 0.29,
+            "2": 0.3
+          }
+        },
+        "concrete_substance": {
+          "type": "score",
+          "score": 0.32,
+          "confidence": 0.51,
+          "legend": {
+            "0": "No specific detail; purely abstract or vague",
+            "1": "Some specific detail mixed with generic statements",
+            "2": "Substantially concrete: numbers, mechanisms, or specific steps are central to the post"
+          },
+          "probabilities": {
+            "0": 0.74,
+            "1": 0.19,
+            "2": 0.07
+          }
+        },
+        "formulaic_storytelling": {
+          "type": "noul",
+          "noul": 0.05
+        },
+        "adversarial_instruction": {
+          "type": "noul",
+          "noul": 0.99
+        },
+        "adversarial_severity": {
+          "type": "score",
+          "score": 3,
+          "confidence": 1,
+          "legend": {
+            "0": "No such language present",
+            "1": "Mentions AI or classifiers incidentally, not as an instruction",
+            "2": "Contains a clear instruction or claim aimed at influencing classification",
+            "3": "Explicit override or system-impersonation language attempting to force a specific verdict"
+          },
+          "probabilities": {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 1
+          }
+        },
+        "formulaic_rhetorical_hook": {
+          "type": "noul",
+          "noul": 0.44
+        },
+        "fake_profound_framing": {
+          "type": "noul",
+          "noul": 0.09
+        },
+        "vague_sourcing": {
+          "type": "noul",
+          "noul": 0.05
+        },
+        "corporate_phrasing_density": {
+          "type": "score",
+          "score": 0.11,
+          "confidence": 0.84,
+          "legend": {
+            "0": "None of this kind of language",
+            "1": "Some of this kind of language, mixed with concrete content",
+            "2": "Heavily dominated by this kind of language"
+          },
+          "probabilities": {
+            "0": 0.9,
+            "1": 0.08,
+            "2": 0.02
+          }
+        }
+      },
+      "error": null
+    },
+    {
+      "id": "EX-028",
+      "split": "dev",
+      "userLabel": "filter",
+      "decision": "uncertain",
+      "reasonCodes": [
+        "adversarial_instruction_detected"
+      ],
+      "modelUsed": "jev-1.13.0",
+      "usage": {
+        "input_tokens": 1212,
+        "output_tokens": 198
+      },
+      "latencyMs": 162,
+      "answers": {
+        "engagement_bait": {
+          "type": "noul",
+          "noul": 0.02
+        },
+        "generic_filler": {
+          "type": "score",
+          "score": 1.35,
+          "confidence": 0.02,
+          "legend": {
+            "0": "Every claim is specific to this post's actual subject",
+            "1": "A mix of specific content and generic filler phrases or sentiment",
+            "2": "Mostly or entirely generic sentiment that could apply to nearly anything"
+          },
+          "probabilities": {
+            "0": 0.32,
+            "1": 0.02,
+            "2": 0.66
+          }
+        },
+        "concrete_substance": {
+          "type": "score",
+          "score": 0.06,
+          "confidence": 0.9,
+          "legend": {
+            "0": "No specific detail; purely abstract or vague",
+            "1": "Some specific detail mixed with generic statements",
+            "2": "Substantially concrete: numbers, mechanisms, or specific steps are central to the post"
+          },
+          "probabilities": {
+            "0": 0.94,
+            "1": 0.05,
+            "2": 0.01
+          }
+        },
+        "formulaic_storytelling": {
+          "type": "noul",
+          "noul": 0.02
+        },
+        "adversarial_instruction": {
+          "type": "noul",
+          "noul": 0.99
+        },
+        "adversarial_severity": {
+          "type": "score",
+          "score": 2.69,
+          "confidence": 0.69,
+          "legend": {
+            "0": "No such language present",
+            "1": "Mentions AI or classifiers incidentally, not as an instruction",
+            "2": "Contains a clear instruction or claim aimed at influencing classification",
+            "3": "Explicit override or system-impersonation language attempting to force a specific verdict"
+          },
+          "probabilities": {
+            "0": 0,
+            "1": 0,
+            "2": 0.31,
+            "3": 0.69
+          }
+        },
+        "formulaic_rhetorical_hook": {
+          "type": "noul",
+          "noul": 0.09
+        },
+        "fake_profound_framing": {
+          "type": "noul",
+          "noul": 0.04
+        },
+        "vague_sourcing": {
+          "type": "noul",
+          "noul": 0.09
+        },
+        "corporate_phrasing_density": {
+          "type": "score",
+          "score": 0.02,
+          "confidence": 0.97,
+          "legend": {
+            "0": "None of this kind of language",
+            "1": "Some of this kind of language, mixed with concrete content",
+            "2": "Heavily dominated by this kind of language"
+          },
+          "probabilities": {
+            "0": 0.98,
+            "1": 0.01,
+            "2": 0.01
+          }
+        }
+      },
+      "error": null
+    },
+    {
+      "id": "EX-029",
+      "split": "held_out",
+      "userLabel": "keep",
+      "decision": "keep",
+      "reasonCodes": [
+        "concrete_substance_high"
+      ],
+      "modelUsed": "jev-1.13.0",
+      "usage": {
+        "input_tokens": 1234,
+        "output_tokens": 198
+      },
+      "latencyMs": 154,
+      "answers": {
+        "engagement_bait": {
+          "type": "noul",
+          "noul": 0.02
+        },
+        "generic_filler": {
+          "type": "score",
+          "score": 0.98,
+          "confidence": 0.97,
+          "legend": {
+            "0": "Every claim is specific to this post's actual subject",
+            "1": "A mix of specific content and generic filler phrases or sentiment",
+            "2": "Mostly or entirely generic sentiment that could apply to nearly anything"
+          },
+          "probabilities": {
+            "0": 0.02,
+            "1": 0.98,
+            "2": 0
+          }
+        },
+        "concrete_substance": {
+          "type": "score",
+          "score": 2,
+          "confidence": 1,
+          "legend": {
+            "0": "No specific detail; purely abstract or vague",
+            "1": "Some specific detail mixed with generic statements",
+            "2": "Substantially concrete: numbers, mechanisms, or specific steps are central to the post"
+          },
+          "probabilities": {
+            "0": 0,
+            "1": 0,
+            "2": 1
+          }
+        },
+        "formulaic_storytelling": {
+          "type": "noul",
+          "noul": 0.29
+        },
+        "adversarial_instruction": {
+          "type": "noul",
+          "noul": 0.01
+        },
+        "adversarial_severity": {
+          "type": "score",
+          "score": 0,
+          "confidence": 1,
+          "legend": {
+            "0": "No such language present",
+            "1": "Mentions AI or classifiers incidentally, not as an instruction",
+            "2": "Contains a clear instruction or claim aimed at influencing classification",
+            "3": "Explicit override or system-impersonation language attempting to force a specific verdict"
+          },
+          "probabilities": {
+            "0": 1,
+            "1": 0,
+            "2": 0,
+            "3": 0
+          }
+        },
+        "formulaic_rhetorical_hook": {
+          "type": "noul",
+          "noul": 0.06
+        },
+        "fake_profound_framing": {
+          "type": "noul",
+          "noul": 0.61
+        },
+        "vague_sourcing": {
+          "type": "noul",
+          "noul": 0.07
+        },
+        "corporate_phrasing_density": {
+          "type": "score",
+          "score": 1,
+          "confidence": 0.99,
+          "legend": {
+            "0": "None of this kind of language",
+            "1": "Some of this kind of language, mixed with concrete content",
+            "2": "Heavily dominated by this kind of language"
+          },
+          "probabilities": {
+            "0": 0,
+            "1": 1,
+            "2": 0
+          }
+        }
+      },
+      "error": null
+    },
+    {
+      "id": "EX-030",
+      "split": "dev",
+      "userLabel": "keep",
+      "decision": "keep",
+      "reasonCodes": [
+        "concrete_substance_high"
+      ],
+      "modelUsed": "jev-1.13.0",
+      "usage": {
+        "input_tokens": 1250,
+        "output_tokens": 198
+      },
+      "latencyMs": 240,
+      "answers": {
+        "engagement_bait": {
+          "type": "noul",
+          "noul": 0.06
+        },
+        "generic_filler": {
+          "type": "score",
+          "score": 0.19,
+          "confidence": 0.72,
+          "legend": {
+            "0": "Every claim is specific to this post's actual subject",
+            "1": "A mix of specific content and generic filler phrases or sentiment",
+            "2": "Mostly or entirely generic sentiment that could apply to nearly anything"
+          },
+          "probabilities": {
+            "0": 0.81,
+            "1": 0.19,
+            "2": 0
+          }
+        },
+        "concrete_substance": {
+          "type": "score",
+          "score": 2,
+          "confidence": 1,
+          "legend": {
+            "0": "No specific detail; purely abstract or vague",
+            "1": "Some specific detail mixed with generic statements",
+            "2": "Substantially concrete: numbers, mechanisms, or specific steps are central to the post"
+          },
+          "probabilities": {
+            "0": 0,
+            "1": 0,
+            "2": 1
+          }
+        },
+        "formulaic_storytelling": {
+          "type": "noul",
+          "noul": 0.03
+        },
+        "adversarial_instruction": {
+          "type": "noul",
+          "noul": 0.01
+        },
+        "adversarial_severity": {
+          "type": "score",
+          "score": 0,
+          "confidence": 1,
+          "legend": {
+            "0": "No such language present",
+            "1": "Mentions AI or classifiers incidentally, not as an instruction",
+            "2": "Contains a clear instruction or claim aimed at influencing classification",
+            "3": "Explicit override or system-impersonation language attempting to force a specific verdict"
+          },
+          "probabilities": {
+            "0": 1,
+            "1": 0,
+            "2": 0,
+            "3": 0
+          }
+        },
+        "formulaic_rhetorical_hook": {
+          "type": "noul",
+          "noul": 0.29
+        },
+        "fake_profound_framing": {
+          "type": "noul",
+          "noul": 0.22
+        },
+        "vague_sourcing": {
+          "type": "noul",
+          "noul": 0.09
+        },
+        "corporate_phrasing_density": {
+          "type": "score",
+          "score": 0.35,
+          "confidence": 0.48,
+          "legend": {
+            "0": "None of this kind of language",
+            "1": "Some of this kind of language, mixed with concrete content",
+            "2": "Heavily dominated by this kind of language"
+          },
+          "probabilities": {
+            "0": 0.65,
+            "1": 0.35,
+            "2": 0
+          }
+        }
+      },
+      "error": null
+    }
+  ]
+}

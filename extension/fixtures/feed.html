@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Offline feed fixture</title>
+  <link rel="stylesheet" href="../src/content/styles.css" />
+  <style>
+    body { max-width: 560px; margin: 24px auto; font: 15px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: #f3f2ef; color: #222; }
+    header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 16px; background: white; padding: 12px 16px; border-radius: 8px; }
+    [data-slop-post-card] { background: white; border-radius: 8px; padding: 16px; margin-bottom: 12px; box-shadow: 0 0 0 1px rgba(0,0,0,0.08); }
+    .post-author { font-weight: 600; font-size: 13px; margin-bottom: 6px; }
+    .post-text { white-space: pre-wrap; line-height: 1.4; }
+    .fixture-note { font-size: 12px; color: #666; margin-bottom: 16px; }
+  </style>
+</head>
+<body>
+  <p class="fixture-note">
+    Offline synthetic feed fixture. Post text reused from eval/examples/batch-001.jsonl — fictional, not real LinkedIn content. Classified here by the PLACEHOLDER keyword classifier only (src/shared/placeholderClassifier.js), not the real rubric.
+  </p>
+  <header>
+    <strong>Fixture feed</strong>
+    <label>
+      <input type="checkbox" id="toggle-filter" checked />
+      Filter enabled
+    </label>
+  </header>
+
+  <button type="button" id="simulate-new-post">Simulate new post arriving (tests MutationObserver)</button>
+
+  <div id="feed">
+    <article data-slop-post-card>
+      <div class="post-author">Fictional User A</div>
+      <div class="post-text">Comment 'FRAMEWORK' below and I'll send you the exact 5-step process I used to land 3 promotions in 2 years. (Must comment, DMs won't count.)</div>
+    </article>
+
+    <article data-slop-post-card>
+      <div class="post-author">Fictional User B</div>
+      <div class="post-text">We cut our CI pipeline from 42 minutes to 6 by switching test runners (Jest to Vitest) and caching node_modules keyed on the lockfile hash. Happy to share the config if useful.</div>
+    </article>
+
+    <article data-slop-post-card>
+      <div class="post-author">Fictional User C</div>
+      <div class="post-text">7 things nobody tells you about leadership (steal these): 1. Silence is a tool. 2. Your calendar is your strategy. Save this post for later, you'll need it.</div>
+    </article>
+
+    <article data-slop-post-card>
+      <div class="post-author">Fictional User D</div>
+      <div class="post-text">We're hiring 2 backend engineers in Austin, remote OK. Python/Postgres, small team, real ownership. Link to the posting in the comments.</div>
+    </article>
+
+    <article data-slop-post-card>
+      <div class="post-author">Fictional User E</div>
+      <div class="post-text">Proud of this one.</div>
+    </article>
+  </div>
+
+  <script type="module" src="feed-harness.js"></script>
+</body>
+</html>
